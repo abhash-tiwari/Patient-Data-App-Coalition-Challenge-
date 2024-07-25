@@ -1,0 +1,56 @@
+/* src/components/PatientProfile/PatientProfile.css */
+.jprofile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background-color: white;
+    border-radius: 1rem;
+    width: 300px;
+    height: 740px;
+    overflow-y: auto; /* Enable vertical scrolling */
+    padding: 1rem;
+  }
+  
+  .jprofile-picture {
+    border-radius: 50%;
+    width: 200px;
+height: 200px;
+  }
+  
+  .jinfo {
+    margin-top: 20px;
+  }
+  
+  .jinfo-item {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 10px;
+  }
+  
+  .jicon {
+    width: 42px;
+    height: 42px;
+    margin-right: 10px;
+  }
+  
+  .jinfo-data {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  
+  .jinfo-data span {
+    margin-bottom: 4px;
+  }
+  .btn{
+width: 220px;
+height: 41px;
+background: var(--activestate_bg_1) 0% 0% no-repeat padding-box;
+background: #01F0D0 0% 0% no-repeat padding-box;
+border-radius: 41px;
+opacity: 1;
+display: flex;
+align-items: center;
+justify-content: center;
+  }

@@ -1,0 +1,131 @@
+.blood-pressure-chart {
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-bottom: 20px;
+    position: relative;
+    width: 766px;
+    height: 650px;
+    display: flex;
+    flex-direction: column;
+}
+
+.chart-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.chart-header h2 {
+    font-size: 1.2em;
+    margin: 0;
+}
+
+.filter {
+    font-size: 0.9em;
+    color: #888;
+}
+
+.chart-container {
+    flex: 1;
+    height: 400px;
+    width: 100%;
+}
+
+.bp-container {
+    display: flex;
+    justify-content: space-between;
+    background-color: #F4F0FE;
+    border-radius: 1rem;
+    padding: 8px;
+    flex: 1;
+}
+
+.divider {
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 10px 0;
+}
+
+.chart-info {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    width: 190px;
+    padding: 1rem;
+}
+
+.chart-info-item {
+    margin-left: 20px;
+    font-size: 0.9em;
+    margin-bottom: 2rem;
+}
+
+.color-systolic {
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    background-color: rgba(255, 99, 132, 1);
+    border-radius: 50%;
+    margin-right: 5px;
+}
+
+.color-diastolic {
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    background-color: rgba(54, 162, 235, 1);
+    border-radius: 50%;
+    margin-right: 5px;
+}
+
+.timeframe-buttons select {
+    border: none;
+    outline: none;
+    background-color: transparent;
+}
+
+.bpIcon-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 1rem;
+    gap: 10px;
+}
+
+#icn1, #icn2, #icn3 {
+    width: 228px;
+    height: 220px;
+    border-radius: 0.5rem;
+    padding: 1rem;
+    box-sizing: border-box;
+}
+
+#icn1 {
+    background-color: #E0F3FA;
+}
+
+#icn2 {
+    background-color: #FFE6E9;
+}
+
+#icn3 {
+    background-color: #FFE6F1;
+}
+
+#icn1 p, #icn2 p, #icn3 p {
+    margin: 5px 0;
+    overflow-wrap: break-word; /* Ensure text breaks to the next line if it's too long */
+}
+
+#icn1 img, #icn2 img, #icn3 img {
+    max-width: 100%; /* Ensure images fit within their containers */
+    height: auto;
+}
+
+#icn1 h1, #icn2 h1, #icn3 h1 {
+    font-size: 1.5em;
+    margin: 10px 0; /* Add some spacing around the headings */
+}

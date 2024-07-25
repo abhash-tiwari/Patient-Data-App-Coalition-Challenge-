@@ -1,0 +1,24 @@
+.lab-results {
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.lab-results h2 {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+}
+
+.lab-results ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.lab-results li {
+    background: #f4f4f4;
+    margin: 5px 0;
+    padding: 10px;
+    border-radius: 8px;
+}
