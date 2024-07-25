@@ -32,8 +32,8 @@ const patients = [
     return (
       <div className="patient-list">
         <div className="search-bar">
-          <h1>Patients</h1>
-          <img src={search} alt="Search Icon" />
+          <h1 className="sticky-heading">Patients</h1>
+          <img src={search} alt="Search Icon" className="sticky-icon"/>
         </div>
         {patients.map((patient, index) => (
           <div key={index} className={`patient-item ${patient.name === 'Jessica Taylor' ? 'special' : ''}`}>

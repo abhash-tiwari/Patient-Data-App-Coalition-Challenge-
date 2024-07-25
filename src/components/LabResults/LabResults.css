@@ -22,3 +22,10 @@
     padding: 10px;
     border-radius: 8px;
 }
+.list{
+    display: flex;
+    justify-content: space-between;
+}
+.list > img{
+    cursor: pointer;
+}

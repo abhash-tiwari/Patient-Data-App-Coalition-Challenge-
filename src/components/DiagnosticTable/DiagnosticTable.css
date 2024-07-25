@@ -6,7 +6,7 @@
     margin: 20px 0;
     width: 766px;
     height: 349px;
-    overflow-x: auto; /* Ensures the table is scrollable on small screens */
+    overflow-x: auto;
     
 }
 

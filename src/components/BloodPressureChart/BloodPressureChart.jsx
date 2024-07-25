@@ -64,7 +64,7 @@ const BloodPressureChart = ({ data }) => {
                 ticks: {
                     maxRotation: 0,
                     minRotation: 0,
-                    autoSkip: false,
+                    autoSkip: timeframe === 12, // Only skip labels for last 12 months
                     font: {
                         size: 14,
                     },

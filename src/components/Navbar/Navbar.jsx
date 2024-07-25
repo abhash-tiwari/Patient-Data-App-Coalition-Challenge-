@@ -7,6 +7,8 @@ import img3 from "../../assets/hello3.svg";
 import img4 from "../../assets/hello4.svg";
 import img5 from "../../assets/hello5.svg";
 import doctor from "../../assets/docdoc.jpg";
+import setting from "../../assets/sett.png";
+import dot from "../../assets/threedot.png";
 import './Navbar.css';
 
 const Navbar = () => {
@@ -42,6 +44,10 @@ const Navbar = () => {
         <div className='dprofile-info'>
           <p>Dr. Jose Simmons</p>
           <p>General Practitioner</p>
+        </div>
+        <div className='menu-item'>
+            <img src={setting} alt="" />
+            <img src={dot} alt="" />
         </div>
       </div>
     </div>
