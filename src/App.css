@@ -38,8 +38,7 @@ body {
   margin-bottom: 20px;
 }
 
-.diagnostic-table {
-  /* No additional styling needed if it fits well within main-content */
+.adiagnostic-table {
   margin-top: 2.5rem;
 }
 
@@ -49,4 +48,74 @@ body {
 }
 .lab-results-gap{
   margin-top: 1rem;
+}
+@media (max-width: 768px) {
+  .Navbar {
+      position: relative;
+  }
+
+  .acontent {
+      flex-direction: column;
+      align-items: center;
+  }
+
+  .apatient-list, .apatient-profile, .ablood-pressure-chart, .lab-results {
+      width: 100%;
+      margin-bottom: 20px;
+  }
+  .main-content{
+    display: flex;
+    flex-direction: column;
+  }
+  .main-content, .patient-profile-and-lab-results {
+      width: 100%;
+      align-items: center;
+  }
+
+  .ablood-pressure-chart, .diagnostic-table {
+      overflow: auto;
+  }
+  .adiagnostic-table{
+    display: none;
+    color: white;
+  }
+}
+
+@media (max-width: 576px) {
+  .Navbar {
+      position: static;
+  }
+
+  .acontent {
+      flex-direction: column;
+      align-items: center;
+  }
+
+  .apatient-list, .apatient-profile, .ablood-pressure-chart, .diagnostic-table, .lab-results {
+      width: 100%;
+      margin-bottom: 20px;
+  }
+  .adiagnostic-table{
+    display: hidden;
+    color: white;
+  }
+  .main-content, .patient-profile-and-lab-results {
+      width: 100%;
+      align-items: center;
+  }
+
+  .ablood-pressure-chart, .adiagnostic-table {
+      overflow: auto;
+  }
+  
+}
+@media (min-width: 768px) {
+  .apatient-list{
+    width: 100%;
+    max-width: 1200px;
+  }
+  .adiagnostic-table{
+    width: 50vw;
+    max-width: 400px;
+  }
 }

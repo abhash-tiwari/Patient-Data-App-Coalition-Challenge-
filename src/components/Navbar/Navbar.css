@@ -1,4 +1,3 @@
-/* src/components/Navbar/Navbar.css */
 .Navbar {
     display: flex;
     justify-content: space-between;
@@ -8,17 +7,18 @@
     background-color: #ffffff;
     border-bottom: 1px solid #dee2e6;
     border-radius: 10px;
-    width: 1400px;
+    width: 100%;
+    max-width: 1400px;
     height: 60px;
-    position: sticky;
-    top: 0;
+    /* position: sticky;
+    top: 0; */
     z-index: 100;
 }
 
 .logo-container img {
     height: 40px;
-    
 }
+
 .menu {
     display: flex;
     gap: 20px;
@@ -61,4 +61,44 @@
     margin: 0;
     font-size: 12px;
     color: #495057;
+}
+
+@media (max-width: 768px) {
+    .Navbar {
+        align-items: flex-start;
+        padding: 10px 20px;
+        margin: 1rem;
+    }
+    .menu {
+        flex-direction: column;
+        width: 100%;
+        align-items: flex-start;
+        gap: 10px;
+        display: none;
+    }
+
+    .menu-item {
+        justify-content: center;
+        width: 100%;
+    }
+}
+
+@media (max-width: 576px) {
+    .Navbar {
+        align-items: flex-start;
+        padding: 10px 20px;
+        margin: 1rem;
+    }
+    .menu {
+        flex-direction: column;
+        width: 100%;
+        align-items: flex-start;
+        gap: 10px;
+        display: none;
+    }
+
+    .menu-item {
+        justify-content: center;
+        width: 100%;
+    }
 }

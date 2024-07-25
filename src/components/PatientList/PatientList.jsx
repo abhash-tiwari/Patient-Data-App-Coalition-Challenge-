@@ -1,10 +1,9 @@
-
 import React from 'react';
 import './PatientList.css';
 import search from "../../assets/se.svg"
 import emily from "../../assets/emily.png"
-import ryan from "../../assets/ryan.png";   // Example image import
-import jessica from "../../assets/jessica.png"; // New patient image
+import ryan from "../../assets/ryan.png";
+import jessica from "../../assets/jessica.png";
 import samantha from "../../assets/samantha.png";
 import ashley from "../../assets/ashley.png";
 import olivia from "../../assets/olivia.png";
@@ -42,7 +41,7 @@ const patients = [
               <p>{patient.name}</p>
               <p>{`${patient.gender}, ${patient.age}`}</p>
             </div>
-            <button className="options-button">...</button> {/* Three-dot menu */}
+            <button className="options-button">...</button>
           </div>
         ))}
       </div>

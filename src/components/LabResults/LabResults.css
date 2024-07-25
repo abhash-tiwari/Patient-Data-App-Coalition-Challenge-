@@ -29,3 +29,46 @@
 .list > img{
     cursor: pointer;
 }
+
+@media (max-width: 768px) {
+    .lab-results {
+        padding: 10px;
+    }
+
+    .lab-results h2 {
+        font-size: 1em;
+    }
+
+    .lab-results li {
+        padding: 8px;
+    }
+
+    .list > img {
+        width: 20px;
+        height: 20px;
+        margin-top: 5px;
+    }
+}
+
+@media (max-width: 576px) {
+    .lab-results {
+        padding: 5px;
+    }
+
+    .lab-results h2 {
+        font-size: 0.9em;
+    }
+
+    .lab-results li {
+        padding: 6px;
+    }
+
+    .list {
+        align-items: flex-start;
+    }
+
+    .list > img {
+        width: 18px;
+        height: 18px;
+    }
+}

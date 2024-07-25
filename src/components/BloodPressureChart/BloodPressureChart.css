@@ -5,8 +5,9 @@
     padding: 20px;
     margin-bottom: 20px;
     position: relative;
-    width: 766px;
-    height: 650px;
+    width: 100%;
+    max-width: 766px;
+    height: auto;
     display: flex;
     flex-direction: column;
 }
@@ -53,7 +54,8 @@
     display: flex;
     flex-direction: column;
     margin-top: 20px;
-    width: 190px;
+    width: 100%;
+    max-width: 190px;
     padding: 1rem;
 }
 
@@ -89,6 +91,7 @@
 
 .bpIcon-info {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
     margin-top: 1rem;
@@ -96,8 +99,9 @@
 }
 
 #icn1, #icn2, #icn3 {
-    width: 228px;
-    height: 220px;
+    width: 100%;
+    max-width: 228px;
+    height: auto;
     border-radius: 0.5rem;
     padding: 1rem;
     box-sizing: border-box;
@@ -117,15 +121,67 @@
 
 #icn1 p, #icn2 p, #icn3 p {
     margin: 5px 0;
-    overflow-wrap: break-word; /* Ensure text breaks to the next line if it's too long */
+    overflow-wrap: break-word;
 }
 
 #icn1 img, #icn2 img, #icn3 img {
-    max-width: 100%; /* Ensure images fit within their containers */
+    max-width: 100%;
     height: auto;
 }
 
 #icn1 h1, #icn2 h1, #icn3 h1 {
     font-size: 1.5em;
-    margin: 10px 0; /* Add some spacing around the headings */
+    margin: 10px 0; 
+}
+
+@media (max-width: 768px) {
+    .blood-pressure-chart{
+        max-width: 70vw;
+        max-height: 50vh;
+    }
+    
+    .bpIcon-info{
+        display: none;
+    }
+    .chart-container{
+        display: none;
+    }
+    .chart-header h2 {
+        font-size: 1em;
+    }
+    .chart-info {
+        width: 100%;
+        gap: 2rem;
+    }
+    .chart-info-item {
+        margin-left: 0;
+    }
+    .bpIcon-info {
+        flex-direction: column;
+    }
+    #icn1, #icn2, #icn3 {
+        width: 100%;
+        max-width: none;
+    }
+}
+
+@media (max-width: 576px) {
+    .blood-pressure-chart{
+        max-width: 90vw;
+    }
+    .bpIcon-info{
+        display: none;
+    }
+    .chart-header h2 {
+        font-size: 0.9em;
+    }
+    .chart-container{
+        display: none;
+    }
+    .chart-info-item {
+        font-size: 0.8em;
+    }
+    #icn1 h1, #icn2 h1, #icn3 h1 {
+        font-size: 1.2em;
+    }
 }

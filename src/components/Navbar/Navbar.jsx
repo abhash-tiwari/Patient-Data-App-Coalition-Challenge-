@@ -1,4 +1,3 @@
-// src/components/Navbar/Navbar.js
 import React from 'react';
 import Logo from "../../assets/TestLogo.svg";
 import img1 from "../../assets/hello.svg";

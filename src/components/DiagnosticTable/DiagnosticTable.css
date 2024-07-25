@@ -32,3 +32,41 @@
 .diagnostic-table tr:hover {
     background-color: #f1f1f1;
 }
+
+@media (max-width: 768px) {
+    .diagnostic-table {
+        padding: 10px;
+        display: hidden;
+        /* color: white; */
+    }
+
+
+    .diagnostic-table th, .diagnostic-table td {
+        padding: 8px;
+    }
+
+    .diagnostic-table h2 {
+        font-size: 1em;
+    }
+}
+
+@media (max-width: 576px) {
+    .diagnostic-table {
+        padding: 5px;
+    }
+
+    .diagnostic-table th, .diagnostic-table td {
+        padding: 6px;
+        font-size: 0.9em;
+    }
+
+    .diagnostic-table h2 {
+        font-size: 0.9em;
+    }
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+    .diagnostic-table{
+        width: 50vw;
+        max-width: 400px;
+      }
+}

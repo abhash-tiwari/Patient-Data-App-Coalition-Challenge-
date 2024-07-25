@@ -54,3 +54,47 @@
   justify-content: center;
   cursor: pointer;
 }
+
+@media (max-width: 768px) {
+    .jprofile {
+        padding: 0.5rem;
+        height: auto;
+        max-height: none;
+    }
+
+    .jprofile-picture {
+        width: 150px;
+        height: 150px;
+    }
+
+    .jicon {
+        width: 36px;
+        height: 36px;
+    }
+
+    .btn {
+        width: 180px;
+        height: 35px;
+    }
+}
+
+@media (max-width: 576px) {
+    .jprofile {
+        padding: 0.5rem;
+    }
+
+    .jprofile-picture {
+        width: 120px;
+        height: 120px;
+    }
+
+    .jicon {
+        width: 30px;
+        height: 30px;
+    }
+
+    .btn {
+        width: 160px;
+        height: 30px;
+    }
+}

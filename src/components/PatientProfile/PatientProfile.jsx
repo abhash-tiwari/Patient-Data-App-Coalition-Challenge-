@@ -1,4 +1,3 @@
-// src/components/PatientProfile/PatientProfile.js
 import React from 'react';
 import './PatientProfile.css';
 import i from "../../assets/BirthIcon.png";

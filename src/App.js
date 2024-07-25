@@ -44,9 +44,9 @@ const App = () => {
                         <PatientList className="apatient-list" />
                         <div className="main-content">
                             <BloodPressureChart className="ablood-pressure-chart" data={patientData.diagnosis_history} />
-                            <DiagnosticTable className="diagnostic-table" data={patientData.diagnostic_list} />
+                            <DiagnosticTable className="adiagnostic-table" data={patientData.diagnostic_list} />
                         </div>
-                        <div className="patient-profile-and-lab-results">
+                        <div className="apatient-profile-and-lab-results">
                            <PatientProfile className="apatient-profile" data={patientData} />
                            <div className="lab-results-gap"> </div>
                           <LabResults data={patientData.lab_results} />
